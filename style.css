@@ -15,8 +15,6 @@ body {
   color: #1A1A1A;
   background-color: #eee;
 }
-.layout {
-}
 .box {
   width: 300px;
   height: 175px;
@@ -34,7 +32,11 @@ body {
 .controls-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .label {
   font-size: 1.5rem;
+}
+.output {
+  width: 3rem;
 }
