@@ -1,0 +1,18 @@
+var rebound = require('rebound'),
+    ss = new rebound.SpringSystem(),
+    s = ss.createSpring(),
+    box = document.querySelector('.box');
+
+    console.log("Spring",s);
+
+    s.setSpringConfig(rebound.SpringConfig.fromOrigamiTensionAndFriction(20,3));
+
+    s.addEventListener({
+      onSpringUpdate: function(spring) {
+        b.innerHTML = Math.round(spring.getCurrentValue() * 1000) / 1000;
+      }
+    });
+
+    box.addEventListener('click', function(e) {
+      s.setEndValue(1);
+    });
