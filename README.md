@@ -1,1 +1,4 @@
-Rebound test project
+bounding
+========
+
+Rebound.js experiment
