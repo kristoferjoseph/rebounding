@@ -1,4 +1,4 @@
-bounding
+Rebounding
 ========
 
 Rebound.js experiment
